@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function setFullName() {
+            var fName = document.getElementById("firstname");
+            var mName = document.getElementById("middlename");
+            var lName = document.getElementById("lastname");
+            var fullname = document.getElementById("fullname");
+            fullname.value = fName.value + " " + mName.value + " " + lName.value;
+        }
+
+        function setClearAll() {
+
+            var clearFullName = document.getElementById("fullname");
+            clearFullName.value = " ";
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Form with a button -->
+
+    <h1> Emplyee Details </h1>
+    <hr>
+    <h4> Personal Information </h4>
+    <label> First Name: </label>
+    <input type="text" id="firstname"> </input>
+    <br><br>
+    <label>Middle Name:</label>
+    <input type="text" id="middlename"> </input>
+    <br><br>
+    <label>Last Name:</label>
+    <input type="text" id="lastname"> </input>
+    <button onclick="setFullName()"> Full Name </button>
+    <button onclick="setClearAll()"> Clear All </button>
+    <br><br>
+    <label> Full Name:</label>
+    <input type="text" id=fullname> get full name here after clicking on the button above
+
+    <!-- List types -->
+    <!-- Order List --type list="Number by defualt, A, a, I, i"--->
+
+    <h2>Order List</h2>
+    <ol type="a">
+        <li> HTML </li>
+        <li> CSS </li>
+        <li> JS </li>
+        <li> React JS </li>
+    </ol>
+    <hr>
+    <!-- Unorder list type list= "bullet points by default, square, circle, none" -->
+    <h2> Unorder List </h2>
+    <ul type="circle">
+        <li> HTML </li>
+        <li> CSS </li>
+        <li> JS </li>
+        <li> React JS </li>
+    </ul>
+    <hr>
+
+    <!-- Description: There are three tags
+    <dl> Description list
+    <dt> Description team  
+    <dd> Describe Description 
+    
+    -->
+
+    <h2>Description List</h2>
+    <dl>
+        <dt> HTML </dt>
+        <dd> Hyper Text Markup Language </dd>
+    </dl>
+    <hr>
+    <!-- Span tag for css work in html -->
+    <h2> Span Tag </h2>
+    <span style="color: blue;">Picku<span style="color: coral;">Biz</span></span>
+
+    <hr>
+    <!-- Table=  -->
+
+
+
+</body>
+
+
+
+</html>
