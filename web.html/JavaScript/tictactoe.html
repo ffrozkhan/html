@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var player = 1;
+
+        function clickHere(id) {
+            var tic = document.getElementById(id);
+            var objPlayer = document.getElementById("player");
+            if (player == 1) {
+                tic.style = "color: red; font-size: 30px";
+                objPlayer.style = "color: black; font-size: 30px";
+                tic.innerHTML = "ME";
+                player = 2;
+            } else {
+                tic.style = "color: black; font-size: 30px";
+                objPlayer.style = "color: black; font-size: 30px";
+                tic.innerHTML = "HE";
+                player = 1;
+            }
+            objPlayer.innerHTML = "Player " + player;
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <h1><span id="player" style="color: red; font-size: 30px">Player 1</span></h1>
+
+
+    <table border="3" style="float: center;">
+        <tr>
+            <td> <span id="11" onclick="clickHere('11')" style="color: green; font-size: 30px;"> YES </span></td>
+            <td> <span id="12" onclick="clickHere('12')" style="color: green; font-size: 30px;"> YES </span></td>
+            <td> <span id="13" onclick="clickHere('13')" style="color: green; font-size: 30px;"> YES </span></td>
+        </tr>
+        <tr>
+            <td> <span id="21" onclick="clickHere('21')" style="color: green; font-size: 30px;"> YES </span></td>
+            <td> <span id="22" onclick="clickHere('22')" style="color: green; font-size: 30px;"> YES </span></td>
+            <td> <span id="23" onclick="clickHere('23')" style="color: green; font-size: 30px;"> YES </span></td>
+        </tr>
+        <tr>
+            <td> <span id="31" onclick="clickHere('31')" style="color: green; font-size: 30px;"> YES </span></td>
+            <td> <span id="32" onclick="clickHere('32')" style="color: green; font-size: 30px;"> YES </span></td>
+            <td> <span id="33" onclick="clickHere('33')" style="color: green; font-size: 30px;"> YES </span></td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
