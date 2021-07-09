@@ -6,6 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function setStoreValues() {
+            var nameData = document.getElementById("username");
+            var passwordData = document.getElementById("password");
+            sessionStorage.setItem("favColor", document.getElementById("colorPicker").value);
+            document.getElementById("body").style = `background-color: ${sessionStorage.getItem("favColor")}`;
+
+
+            sessionStorage.setItem("userName", nameData.value);
+            sessionStorage.setItem("userPassword", passwordData.value);
+
+        }
+
+        function getStoreValues() {
+            var nameData = document.getElementById("username");
+            var passwordData = document.getElementById("password");
+            document.getElementById("colorPicker").value = sessionStorage.getItem("favColor");
+            document.getElementById("body").style = `background-color: ${sessionStorage.getItem("favColor")}`;
+
+
+            nameData.value = sessionStorage.getItem("userName");
+            passwordData.value = sessionStorage.getItem("userPassword");
+
+        }
+    </script>
 </head>
 <style>
     a {
@@ -19,14 +44,14 @@
     }
 </style>
 
-<body>
+<body id="body">
 
     <nav>
         <a href="./fieldset.html">Registration</a>
         <a href="./navigation.html">Home</a>
         <a href="./imgandfigure.html">Products</a>
         <a href="./navigation.html">About Us</a>
-        <a href="./navigation.html">Contact Us</a>
+        <a href="./contactus.html">Contact Us</a>
         <button style="float: right;">Search</button>
         <input type="text" placeholder="Search" style="float: right;">
 
@@ -34,25 +59,40 @@
     </nav>
 
     <marquee behavior="alternate" scrollamount="5%" direction="">"User Information"</marquee>
-    <fieldset>
+    <fieldset style="width: fit-content; background-color: white;">
 
         <legend>Registration Form</legend>
         <h1>Employee Details</h1>
         <!-- <hr> -->
 
         <label> First Name: </label>
-        <input type="text"> </input>
+        <input id="username" type="text"> </input>
         <br><br>
         <label>Middle Name:</label>
-        <input type="text"> </input>
+        <input id="password" type="text"> </input>
         <br><br>
         <label>Last Name:</label>
         <input type="text"> </input>
-        <button> Submit </button>
+        <br><br>
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female <br><br>
+        <label> Hobbies: </label>
+        <input type="checkbox" value="Games">Games
+        <input type="checkbox" value="Sports">Sports
+        <input type="checkbox" value="Acting">Acting
+        <br><br>
+        <label> Style Favorite Color: </label>
+        <input type="color" id="colorPicker">
+        <br><br>
+        <button onclick="setStoreValues()"> Submit </button>
         <br><br>
 
     </fieldset>
 
 </body>
+<script>
+    getStoreValues();
+</script>
 
 </html>
