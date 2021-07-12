@@ -6,8 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function setStoreValues() {
+            var objBody = document.getElementById("body");
+            objBody.style = `background-color:${sessionStorage.getItem("favColor")} `
+
+        }
+    </script>
+
+
+
 </head>
 <style>
+    footer {
+        background-color: teal;
+        height: 300px;
+        text-align: right;
+    }
+
+    iframe {
+        width: fit-content;
+        height: 250px;
+        padding: 10px;
+
+    }
+
     a {
         padding: 10px;
         color: black;
@@ -19,19 +42,58 @@
     }
 </style>
 
-<body>
+<body id="body">
     <nav>
         <a href="./fieldset.html">Registration</a>
         <a href="./navigation.html">Home</a>
         <a href="./imgandfigure.html">Products</a>
         <a href="./navigation.html">About Us</a>
-        <a href="./navigation.html">Contact Us</a>
+        <a href="./contactus.html">Contact Us</a>
         <button style="float: right;">Search</button>
         <input type="text" placeholder="Search" style="float: right;">
 
 
     </nav>
 
+    <h1>Laptops</h1>
+
+    <p>
+        A laptop, laptop computer, or notebook computer is a small, portable
+        personal computer (PC) with a screen and alphanumeric keyboard. <br> These
+        typically have a "clamshell" form factor, typically having the screen
+        mounted on the inside of the upper lid and the keyboard on <br> the inside of
+        the lower lid, although 2-in-1 PCs with a detachable keyboard are often
+        marketed as laptops or as having a "laptop mode." <br> Laptops are folded shut
+        for transportation, and thus are suitable for mobile use.[1] Its name
+        comes from lap, as it was deemed practical <br> to be placed on a person's lap
+        when being used. Today, laptops are the used in a variety of settings,
+        such as at work, in education, <br> for playing games, web browsing, for
+        personal multimedia, and general home computer use. <br><br> As of 2021, in
+        American English, the terms laptop computer and notebook computer are used
+        interchangeably;[2] in other dialects of <br> English one or the other may be
+        preferred. The term 'notebook computers' or 'notebooks' originally
+        referred to a specific size of laptop <br> (originally smaller and lighter than
+        mainstream laptops of the time),[3] the terms have come to mean the same
+        thing and notebook no <br> longer refers to any specific size. Laptops combine
+        all the input/output components and capabilities of a desktop computer,
+        including <br> the display screen, small speakers, a keyboard, data storage
+        device, sometimes an optical disc drive, pointing devices (such as a <br>
+        touchpad or pointing stick), with an operating system, a processor and
+        memory into a single unit.
+    </p>
+
+    <footer>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.3535163834817!2d77.30915031473137!3d19.179755787028448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd1d7446ed1ca83%3A0xf7aaaf09a7aadfe9!2sPickupBiz%20Learning%20Development%20Center!5e0!3m2!1sen!2sin!4v1625813945711!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </footer>
+
+
 </body>
+
+
+<script>
+    setStoreValues()
+</script>
 
 </html>
