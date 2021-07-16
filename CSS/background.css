@@ -1,0 +1,22 @@
+body{
+    background-image: url(../img/download.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.para1{
+    color: red;
+    background-image: url(../img/hp.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: center;
+
+}
+.para2{
+    background-color: salmon;
+    color: white;
+    padding: 10px;
+    text-align: justify;
+}
