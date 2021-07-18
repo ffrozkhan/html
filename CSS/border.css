@@ -1,0 +1,16 @@
+h1{
+    border: 3px solid blanchedalmond;
+    
+}
+
+.bdr1{
+    border: 1px dotted black;
+
+}
+.bdr2{
+    border: 5px dashed chartreuse;
+
+}
+.bdr3{
+    border: 7px double red;
+}
