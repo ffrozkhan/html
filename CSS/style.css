@@ -1,0 +1,12 @@
+h1{
+    background-color: blue;
+    color: white;
+}
+.heading{
+    color: chartreuse;
+    background-color: rgba(250, 91, 70, 0.5);
+    /* box-shadow: 0 0 10px black; */
+}
+h2{
+    background:linear-gradient (red, blue, white)
+}
