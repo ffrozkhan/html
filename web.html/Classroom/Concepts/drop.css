@@ -1,0 +1,34 @@
+nav{
+    background-color: brown;
+    padding: 25px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    
+
+}
+a:hover{
+    box-shadow: 0 0 10px black;
+}
+
+/*-----------------Dropdown first--------------- */
+.dropdown-1 a{
+    display: block;
+}
+.dropdown-1{
+    display: inline-block;
+}
+.dropdown-list{
+    position: absolute;
+    padding: 5px;
+    width: 200px;
+    display: none;
+}
+.dropdown-1:hover .dropdown-list{
+    display: block;
+    text-align: center;
+    background: burlywood;
+    border-radius: 20px;
+}
