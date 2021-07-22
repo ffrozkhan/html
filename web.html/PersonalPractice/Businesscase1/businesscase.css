@@ -1,0 +1,55 @@
+body{
+    margin: 0px;
+}
+nav{
+    background-color: darkslategrey;
+    padding: 20px;
+    border-radius: 5px;
+}
+.nav a {
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 20px;
+    /* margin: 25px; */
+
+}
+a:hover{
+    background-color: black;
+    /* border-radius: 15px; */
+    cursor:pointer;
+    color: white;
+
+}
+.searchbutton{
+    border-color: yellowgreen;
+    border-width: 3px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    box-shadow: white;
+    width: 90px;
+}
+aside{
+    background-color: black;
+    width: fit-content;
+    height: 700px;
+    padding-top: 30px;
+    border-radius: 5px;
+
+}
+.aside a{
+    text-decoration: none;
+    display: block;
+    padding: 30px;
+    color: whitesmoke;
+    font-size: medium;
+}
+.aside a:hover{
+    background-color: darkslategrey;
+    /* text-align: center; */
+    display: block;
+    padding: 30px;
+}
+.checkbox{
+    float: right;
+}
